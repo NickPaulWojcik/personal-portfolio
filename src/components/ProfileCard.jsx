@@ -2,7 +2,7 @@ import { Avatar, Stack, Text } from '@mantine/core'
 import { IconUser } from '@tabler/icons-react'
 import { githubColors } from '../theme.js'
 
-export function ProfileCard({ name, title, company, yearsOfExperience }) {
+export function ProfileCard({ name, title, company, yearsOfExperience, avatarUrl }) {
   return (
     <Stack
       align="center"
@@ -11,7 +11,7 @@ export function ProfileCard({ name, title, company, yearsOfExperience }) {
       px="md"
       style={{ borderBottom: `1px solid ${githubColors.border}` }}
     >
-      <Avatar size={72} radius="50%" color="gray">
+      <Avatar src={avatarUrl} size={72} radius="50%" color="gray">
         <IconUser size={40} stroke={1.5} />
       </Avatar>
       <Text fw={600} size="md" ta="center">
