@@ -6,9 +6,10 @@ import { githubColors } from './theme.js'
 
 const profile = {
   name: 'Nick Wojcik',
-  title: 'Software Engineer',
-  company: 'Company Name',
-  yearsOfExperience: 5,
+  title: 'Software Engineer II',
+  company: 'Credit Acceptance, corp.',
+  yearsOfExperience: 7,
+  avatarUrl: '/profile.jpg',
 }
 
 function App() {
