@@ -1,5 +1,4 @@
-import { AppShell, Center } from '@mantine/core'
-import { TopNav } from './components/TopNav.jsx'
+import { Center } from '@mantine/core'
 import { ProfileCard } from './components/ProfileCard.jsx'
 import { githubColors } from './theme.js'
 
@@ -13,20 +12,9 @@ const profile = {
 
 function App() {
   return (
-    <AppShell
-      header={{ height: 60 }}
-      styles={{ main: { backgroundColor: githubColors.pageBg } }}
-    >
-      <AppShell.Header style={{ backgroundColor: 'transparent' }}>
-        <TopNav />
-      </AppShell.Header>
-
-      <AppShell.Main>
-        <Center h="calc(100vh - 60px)">
-          <ProfileCard {...profile} />
-        </Center>
-      </AppShell.Main>
-    </AppShell>
+    <Center h="100vh" style={{ backgroundColor: githubColors.pageBg }}>
+      <ProfileCard {...profile} />
+    </Center>
   )
 }
 
