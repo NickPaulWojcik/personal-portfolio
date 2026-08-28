@@ -4,26 +4,20 @@ import { githubColors } from '../theme.js'
 
 export function ProfileCard({ name, title, company, yearsOfExperience, avatarUrl }) {
   return (
-    <Stack
-      align="center"
-      gap={4}
-      py="lg"
-      px="md"
-      style={{ borderBottom: `1px solid ${githubColors.border}` }}
-    >
-      <Avatar src={avatarUrl} size={72} radius="50%" color="gray">
-        <IconUser size={40} stroke={1.5} />
+    <Stack align="center" gap="xs">
+      <Avatar src={avatarUrl} size={200} radius="50%" color="gray">
+        <IconUser size={110} stroke={1.5} />
       </Avatar>
-      <Text fw={600} size="md" ta="center">
+      <Text fw={700} size="2.5rem" ta="center">
         {name}
       </Text>
-      <Text size="sm" c={githubColors.textSecondary} ta="center">
+      <Text size="xl" c={githubColors.textSecondary} ta="center">
         {title}
       </Text>
-      <Text size="sm" c={githubColors.textSecondary} ta="center">
+      <Text size="xl" c={githubColors.textSecondary} ta="center">
         {company}
       </Text>
-      <Text size="xs" c={githubColors.textSecondary} ta="center">
+      <Text size="lg" c={githubColors.textSecondary} ta="center">
         {yearsOfExperience} years of experience
       </Text>
     </Stack>
